@@ -29,6 +29,18 @@ The schematic for the board can be found [here][1].
 
 ## Architecture 
 
+The RP2040 serves as the bitstream uploader and communication bridge for iCE40. 
+4 lines connect the two chips. In the default RP firmware, it exposes two CDC 
+USB ports when plugged in. One is uses to send the bitstream from your computer 
+using a Pythion script. RP receives the bistream and uploads it via SPI to the 
+FPGA. (We're using SPI slave mode configuration for this board.) The bitstream 
+is saved in the flash. When the RP boots up, if it finds a bistream in the flash, 
+it will upload it to iCE40.
+
+There are more possibilities here - for instance, with custom RP firmware, you 
+can use the iCE40 as a compute accelerator and transfer data back and forth 
+via SPI using the 4 lines.
+
 ## Pinout
 
 Here's the pinout for the board.
