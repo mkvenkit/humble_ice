@@ -14,17 +14,18 @@ Raspberry Pi RP2040.
 ![comp](images/hi-comp.png)
 
 
-- Lattice Semiconductor iCE40UP5k FPGA 
-- Raspberry Pi RP2040
-- 32 Mb Flash
-- 2 x 2x20 2.54 mm headers (3 x PMOD iCE40, 1 x PMOD RP2040) 
-- 1 x Red LED RP2040
-- 1 x Blue LED iCE40
-- 1 push button reset
-- 1 push button RP boot 
-- 1 push button iCE40
-- USB Type-C connector
-- 4 x mounting holes
+1. Lattice Semiconductor iCE40UP5k FPGA 
+2. Raspberry Pi RP2040
+3. 32 Mb Flash
+4. 2 x 2x20 2.54 mm headers (3 x PMOD iCE40, 1 x PMOD RP2040) 
+5. RP2040 SWD (debug) header
+6. 1 x Red LED RP2040
+7. 1 x Blue LED iCE40
+8. 1 push button reset
+9. 1 push button RP boot 
+10. 1 push button iCE40
+11. USB Type-C connector
+12. 4 x mounting holes
 
 The schematic for the board can be found [here][1].
 
