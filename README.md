@@ -14,8 +14,7 @@ Raspberry Pi RP2040.
 
 ## Hardware 
 
-![comp](images/hi-comp.png)
-
+<img src="images/hi-comp.png"  width=60%/>
 
 1. Lattice Semiconductor iCE40UP5k FPGA 
 2. Raspberry Pi RP2040
@@ -54,12 +53,12 @@ via SPI using the 4 lines.
 
 Here's the pinout for the board.
 
-![pinout](images/hi-pinout.png)
+<img src="images/hi-pinout.png"  width=60%/>
 
 ## Board dimensions
 
 Here are the board dimensions for Humble iCE.
 
-![dims](images/hi-dim.png)
+<img src="images/hi-dim.png"  width=60%/>
 
 [1]: https://github.com/mkvenkit/humble_ice/blob/main/hi_schematic_v_0.3.pdf
