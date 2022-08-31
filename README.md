@@ -31,7 +31,7 @@ The schematic for the board can be found [here][1].
 ## Architecture 
 
 The RP2040 serves as the bitstream uploader and communication bridge for iCE40. 
-4 lines connect the two chips. In the default RP firmware, it exposes two CDC 
+4 extra GPIO lines connect the two chips. In the default RP firmware, it exposes two CDC 
 USB ports when plugged in. One is uses to send the bitstream from your computer 
 using a Pythion script. The second port can be used to communicate with a UART 
 module in FPGA fabric. RP receives the bistream and uploads it via SPI to the 
