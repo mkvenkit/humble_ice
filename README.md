@@ -1,7 +1,8 @@
 # Humble iCE 
 
 Humble iCE is a low cost FPGA development board based on Lattice iCE40UP5k and 
-Raspberry Pi RP2040.
+Raspberry Pi RP2040. 
+
 
 |Front |Back |
 |---|---|
@@ -34,9 +35,12 @@ The RP2040 serves as the bitstream uploader and communication bridge for iCE40.
 USB ports when plugged in. One is uses to send the bitstream from your computer 
 using a Pythion script. The second port can be used to communicate with a UART 
 module in FPGA fabric. RP receives the bistream and uploads it via SPI to the 
-FPGA. (We're using SPI slave mode configuration for this board.) The bitstream 
-is saved in the flash. When the RP boots up, if it finds a bistream in the flash, 
-it will upload it to iCE40.
+FPGA. To save costs, we're using SPI slave mode configuration for this board. 
+The bitstream is saved in the flash. When the RP boots up, if it finds a 
+bistream in the flash, it will upload it to iCE40 via SPI.
+
+Another cost saving measure used in the board is to use the XTAL on RP2040 and 
+*clk_gpout* to supply the clock for the iCE40.
 
 There are more possibilities here - for instance, with custom RP firmware, you 
 can use the iCE40 as a compute accelerator and transfer data back and forth 
