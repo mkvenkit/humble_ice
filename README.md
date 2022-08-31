@@ -16,7 +16,7 @@ Raspberry Pi RP2040.
 - Lattice Semiconductor iCE40UP5k FPGA 
 - Raspberry Pi RP2040
 - 32 Mb Flash
-- 2 x 2x20 headers (3 x PMOD iCE40, 1 x PMOD RP2040) 
+- 2 x 2x20 2.54 mm headers (3 x PMOD iCE40, 1 x PMOD RP2040) 
 - 1 x Red LED RP2040
 - 1 x Blue LED iCE40
 - 1 push button reset
