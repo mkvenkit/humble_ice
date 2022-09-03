@@ -67,4 +67,5 @@ Here are the board dimensions for Humble iCE.
 <img src="images/hi-dim.png"  width=60%/>
 
 [1]: https://github.com/mkvenkit/humble_ice/blob/main/hi_schematic_v_0.3.pdf
-[2]
+[2]: https://github.com/mkvenkit/humble_ice/blob/main/getting_started.md
+
