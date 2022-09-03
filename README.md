@@ -31,6 +31,11 @@ Raspberry Pi RP2040.
 
 The schematic for the board can be found [here][1].
 
+## Getting Started 
+
+Please read the [Getting Started with Humble iCE][2] guide to get started 
+with your board.
+
 ## Architecture 
 
 The RP2040 serves as the bitstream uploader and communication bridge for iCE40. 
@@ -62,3 +67,4 @@ Here are the board dimensions for Humble iCE.
 <img src="images/hi-dim.png"  width=60%/>
 
 [1]: https://github.com/mkvenkit/humble_ice/blob/main/hi_schematic_v_0.3.pdf
+[2]
