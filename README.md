@@ -66,6 +66,14 @@ Here are the board dimensions for Humble iCE.
 
 <img src="images/hi-dim.png"  width=60%/>
 
+## Acknowledgment 
+
+I'd like to thank [Sivaprash S][3] for his help with PCB design and assembly. I 
+would also like to thank [Venkat Rangan][4] for reviewing the schematic, and 
+for many helpful discussions.
+
 [1]: https://github.com/mkvenkit/humble_ice/blob/main/hi_schematic_v_0.3.pdf
 [2]: https://github.com/mkvenkit/humble_ice/blob/main/getting_started.md
+[3]: https://twitter.com/SivaPrakazh
+[4]: https://tinyvision.ai/
 
