@@ -2,9 +2,80 @@
 
 Thank you for purchasing Humble iCE! 
 
-To get started, you need to first clone this githup repo on your computer. 
+**Note:* If your RP2040 firmware is missing or needs to be re-uploaded, please 
+read the [Customizing Humble iCE][2] document first.
 
-Next, let's make sure you can 
+To get started, you need to first clone this githup repo on your computer, 
+and cd into the *humble_ice* directory.
+
+Next, let's make sure you can upload a bitstram to the board.
+
+First make sure you have Python 3.x installed on your system. Next, 
+install the [pyserial][1] module. 
+
+## Linux 
+
+Here are instructions for Linux. In this case, I tested with a Raspberry Pi 4
+running Raspberry Pi OS.
+
+*ssh* into your Pi and run this command:
+
+```
+dmesg -w
+```
+
+Now plug in Humble iCE into a USB port. You should see something like this:
+
+```
+[59592.185060] usb 1-1.4: Product: Humble iCE
+[59592.185077] usb 1-1.4: Manufacturer: Electronut Labs
+[59592.185094] usb 1-1.4: SerialNumber: 123456
+[59592.268464] cdc_acm 1-1.4:1.0: ttyACM0: USB ACM device
+[59592.271225] cdc_acm 1-1.4:1.2: ttyACM1: USB ACM device
+```
+
+The first port *ttyACM0* is what we need for uploading the bitstream.
+
+Now run this command. 
+
+```
+python3 hiprog.py --p /dev/ttyACM0 --f bitstream/blinky.bin
+```
+
+Here's the output:
+
+```
+Starting serial_prog...
+File size = 104090 bytes.
+writing...
+wrote 104090 bytes...
+done.
+```
+
+If all went well, the red LED would have turned on briefly, and your blue LED 
+has now started blinking at 1 Hz.
+
+## Windows 10
+
+Now for Windows. Bring up *Device Manager* and plug in your board.
+
+![Device Manager][dm.png]
+
+There doens't seem to be a consistent way to identify the first port on Windows. 
+In my case *COM4* turned out to be one - in any case it's easy to try both. Here's 
+how you upload the bitstream:
+
+```
+python3 hiprog.py --p COM4 --f bitstream\blinky.bin
+```
+
+```
+
+```
+
+## Building FPGA Projects 
+
+The first step here is to install the amazing 
 
 Next, you need to install the 
 
@@ -14,3 +85,5 @@ Next, you need to install the
 - yosys, building 
 - examples 
 
+[1]: https://pyserial.readthedocs.io/en/latest/pyserial.html
+[2]: https://github.com/mkvenkit/humble_ice/blob/main/customizing.md

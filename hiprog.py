@@ -9,13 +9,9 @@
     Author: Mahesh Venkitachalam (electronut.in)
 
 """
-import chunk
-import time
-from requests import head
 import serial
 import argparse
 import os 
-import struct
 
 def main():
     print("Starting serial_prog...")
@@ -42,9 +38,6 @@ def main():
     print("writing...")
 
     # send file size in 32 bit header
-    #header = struct.pack('<L', file_size)
-    #ser.write(header)
-
     count = 0
     try:
         nbytes = 0
