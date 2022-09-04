@@ -31,10 +31,18 @@ Raspberry Pi RP2040.
 
 The schematic for the board can be found [here][1].
 
-## Getting Started 
+## Purchasing Humble iCE
+
+If you are in India, please [sign up here][6] to reserve a board. If you are ourside 
+India, please sign for our [GroupGets campaign][7]. 
+
+## Using Humble iCE 
 
 Please read the [Getting Started with Humble iCE][2] guide to get started 
 with your board.
+
+If you would like to modify the firmware on the RP2040 on Humble iCE, please 
+read the [Customizing Humble iCE][5] document.
 
 ## Architecture 
 
@@ -76,4 +84,6 @@ for many helpful discussions.
 [2]: https://github.com/mkvenkit/humble_ice/blob/main/getting_started.md
 [3]: https://twitter.com/SivaPrakazh
 [4]: https://tinyvision.ai/
-
+[5]: 
+[6]: https://mailchi.mp/8d2085ed48df/humble-ice-budget-fpga-dev-board-based-on-lattice-ice40up5k-and-raspberry-pi-rp2040
+[7]: https://groupgets.com/campaigns/1062-humble-ice
