@@ -10,10 +10,10 @@ read the [Customizing Humble iCE][2] document first.
 To get started, you need to first clone this github repo on your computer, 
 and cd into the *humble_ice* directory.
 
-Next, let's make sure you can upload a bitstram to the board.
-
-First make sure you have Python 3.x installed on your system. Next, 
+Now make sure you have Python 3.x installed on your system. Next, 
 install the [pyserial][1] module. 
+
+Next, let's make sure you can upload a bitstram to the board.
 
 ## Linux 
 
