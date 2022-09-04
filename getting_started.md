@@ -1,5 +1,7 @@
 # Getting Started with Humble iCE
 
+![hi](images/hi.jpg)
+
 Thank you for purchasing Humble iCE! 
 
 **Note:* If your RP2040 firmware is missing or needs to be re-uploaded, please 
@@ -36,7 +38,6 @@ Now plug in Humble iCE into a USB port. You should see something like this:
 
 The first port *ttyACM0* is what we need for uploading the bitstream.
 
-Now run this command. 
 
 ```
 python3 hiprog.py --p /dev/ttyACM0 --f bitstream/blinky.bin
@@ -59,7 +60,7 @@ has now started blinking at 1 Hz.
 
 Now for Windows. Bring up *Device Manager* and plug in your board.
 
-![Device Manager][dm.png]
+![Device Manager](images/dm.png)
 
 There doens't seem to be a consistent way to identify the first port on Windows. 
 In my case *COM4* turned out to be one - in any case it's easy to try both. Here's 
@@ -69,13 +70,27 @@ how you upload the bitstream:
 python3 hiprog.py --p COM4 --f bitstream\blinky.bin
 ```
 
-```
+Now open a *cmd* shell and run this command. Note that depening on your setup, it can be *python* or *python3*.
+
+Here's the output:
 
 ```
+Starting serial_prog...
+File size = 104090 bytes.
+writing...
+wrote 104090 bytes...
+done.
+```
+
+Now you're ready to build your own FPGA projects.
 
 ## Building FPGA Projects 
 
-The first step here is to install the amazing 
+The first step here is to install the amazing [OSS CAD suite][3] from YosysHQ. Go to theie GitHub [releases][4] page and install the toolchain for your system.
+
+I recommend that you install the OSS CAD suite on a Linux system (native, VM, or WSL on Windows). Once you can run *yosys* abnd *next-pnr* from a shell, you are ready to go.
+
+
 
 Next, you need to install the 
 
@@ -87,3 +102,6 @@ Next, you need to install the
 
 [1]: https://pyserial.readthedocs.io/en/latest/pyserial.html
 [2]: https://github.com/mkvenkit/humble_ice/blob/main/customizing.md
+[3]: https://www.yosyshq.com/open-source
+[4]: https://github.com/YosysHQ/oss-cad-suite-build/releases
+
