@@ -38,6 +38,8 @@ Now plug in Humble iCE into a USB port. You should see something like this:
 
 The first port *ttyACM0* is what we need for uploading the bitstream.
 
+Now run this from the shell:
+
 
 ```
 python3 hiprog.py --p /dev/ttyACM0 --f bitstream/blinky.bin
@@ -62,15 +64,15 @@ Now for Windows. Bring up *Device Manager* and plug in your board.
 
 ![Device Manager](images/dm.png)
 
-There doens't seem to be a consistent way to identify the first port on Windows. 
-In my case *COM4* turned out to be one - in any case it's easy to try both. Here's 
-how you upload the bitstream:
+There doesn't seem to be a consistent way to identify the first port on Windows. 
+In my case *COM4* turned out to be one. In any case, it's easy enough to try both. 
+Here's how you upload the bitstream:
 
 ```
 python3 hiprog.py --p COM4 --f bitstream\blinky.bin
 ```
 
-Now open a *cmd* shell and run this command. Note that depening on your setup, it can be *python* or *python3*.
+Note that depending on your setup, it can be *python* or *python3*.
 
 Here's the output:
 
@@ -86,7 +88,7 @@ Now you're ready to build your own FPGA projects.
 
 ## Building FPGA Projects 
 
-The first step here is to install the amazing [OSS CAD suite][3] from YosysHQ. Go to theie GitHub [releases][4] page and install the toolchain for your system.
+The first step here is to install the amazing [OSS CAD suite][3] from YosysHQ. Go to their GitHub [releases][4] page and install the toolchain for your system.
 
 I recommend that you install the OSS CAD suite on a Linux system (native, VM, or WSL on Windows). Once you can run *yosys* abnd *next-pnr* from a shell, you are ready to go.
 
