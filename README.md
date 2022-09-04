@@ -84,6 +84,6 @@ for many helpful discussions.
 [2]: https://github.com/mkvenkit/humble_ice/blob/main/getting_started.md
 [3]: https://twitter.com/SivaPrakazh
 [4]: https://tinyvision.ai/
-[5]: 
+[5]: https://github.com/mkvenkit/humble_ice/blob/main/customizing.md
 [6]: https://mailchi.mp/8d2085ed48df/humble-ice-budget-fpga-dev-board-based-on-lattice-ice40up5k-and-raspberry-pi-rp2040
 [7]: https://groupgets.com/campaigns/1062-humble-ice
