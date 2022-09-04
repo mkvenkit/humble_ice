@@ -2,11 +2,8 @@
 
 top.v
 
-A simple test pattern using the hvsync_generator module.
 
-Code adapted from:
-
-DESIGNING VIDEO GAME HARDWARE IN VERILOG by Steven Hugg
+A simple LED blink example.
 
 */
 
