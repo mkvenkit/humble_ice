@@ -68,7 +68,7 @@ Here are the board dimensions for Humble iCE.
 
 ## Acknowledgment 
 
-I'd like to thank [Sivaprash S][3] for his help with PCB design and assembly. I 
+I'd like to thank [Sivaprakash S][3] for his help with PCB design and assembly. I 
 would also like to thank [Venkat Rangan][4] for reviewing the schematic, and 
 for many helpful discussions.
 
