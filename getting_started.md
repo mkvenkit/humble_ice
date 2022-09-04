@@ -90,17 +90,13 @@ Now you're ready to build your own FPGA projects.
 
 The first step here is to install the amazing [OSS CAD suite][3] from YosysHQ. Go to their GitHub [releases][4] page and install the toolchain for your system.
 
-I recommend that you install the OSS CAD suite on a Linux system (native, VM, or WSL on Windows). Once you can run *yosys* abnd *next-pnr* from a shell, you are ready to go.
+I recommend that you install the OSS CAD suite on a Linux system (native, VM, or WSL on Windows). Once you can run *yosys* and *next-pnr* from a shell, you are ready to go. Also ensure that you can run *make* from your shell.
 
+Now, cd to *examples/blinky* and type *make*. If all goes well, it will create a 
+*blinky.bin* which you can upload to Humble iCE and get your first FPGA project going!
 
+A lot more examples are coming, so keep an eye on this repo!
 
-Next, you need to install the 
-
-- uf2
-- blinky bitstream 
-- hiprog.py
-- yosys, building 
-- examples 
 
 [1]: https://pyserial.readthedocs.io/en/latest/pyserial.html
 [2]: https://github.com/mkvenkit/humble_ice/blob/main/customizing.md
