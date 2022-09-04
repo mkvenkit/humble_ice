@@ -7,7 +7,7 @@ Thank you for purchasing Humble iCE!
 **Note:** If your RP2040 firmware is missing or needs to be re-uploaded, please 
 read the [Customizing Humble iCE][2] document first.
 
-To get started, you need to first clone this githup repo on your computer, 
+To get started, you need to first clone this github repo on your computer, 
 and cd into the *humble_ice* directory.
 
 Next, let's make sure you can upload a bitstram to the board.
