@@ -4,7 +4,7 @@
 
 Thank you for purchasing Humble iCE! 
 
-**Note:* If your RP2040 firmware is missing or needs to be re-uploaded, please 
+**Note:** If your RP2040 firmware is missing or needs to be re-uploaded, please 
 read the [Customizing Humble iCE][2] document first.
 
 To get started, you need to first clone this githup repo on your computer, 
