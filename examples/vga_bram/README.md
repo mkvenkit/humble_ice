@@ -2,7 +2,7 @@
 
 ![VGA BRAM](vga_bram.jpg)
 
-This example displays a scrolling 64 x 64 image using VGA. A Python script is provided 
+This example displays a tiled, scrolling 64 x 64 image using VGA. A Python script is provided 
 which resizes the input image and creates a hex file which can be used to 
 initialize the block RAM. (We use 12-bit RGB color.)
 
