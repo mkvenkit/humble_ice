@@ -1,0 +1,22 @@
+set_io clk 35
+
+set_io R[0] 43
+set_io R[1] 38
+set_io R[2] 34
+set_io R[3] 31
+
+set_io G[0] 27
+set_io G[1] 25
+set_io G[2] 21
+set_io G[3] 19
+
+set_io B[0] 42
+set_io B[1] 36
+set_io B[2] 32
+set_io B[3] 28
+
+set_io hsync 26
+set_io vsync 23
+
+set_io LED 13
+
