@@ -18,7 +18,7 @@ careful way. This is discussed in detail in the article below:
 
 https://zipcpu.com/tutorial/lsn-08-memory.pdf
 
-If you infer BRAM correctly, you will see this in the next-pnr output:
+If you infer BRAM correctly, you will see *ICESTORM_RAM** in the next-pnr output. There are a total of 30 x 4Kb block RAM units on the iCE40UP5k.
 
 ```
 Info: Device utilisation:
