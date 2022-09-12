@@ -3,7 +3,7 @@
 ![music box](./music_box.jpg)
 
 A simple musical tune player. Code is from **fpga4fun** with some minor changes - 
-mainly using a PLL to create a 25 NMhz clock - to make it work for Humble iCE.
+mainly using a PLL to create a 25 MHz clock - to make it work for Humble iCE.
 
 https://www.fpga4fun.com/MusicBox4.html
 
