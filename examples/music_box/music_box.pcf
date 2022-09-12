@@ -1,0 +1,7 @@
+set_io clk_12Mhz 35
+
+set_io speaker 19 # IOB_29B
+
+set_io LED 13
+
+
